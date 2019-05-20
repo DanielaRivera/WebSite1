@@ -21,9 +21,10 @@ using System.Activities.Expressions;
         user.User = usu.Text;
         user.Pass = pass.Text;
         user.validar();
-        if(user.Msg.Equals("Bienvenido"))
+        if (user.Msg.Equals("Bienvenido"))
         {
             Lb.Text = user.Msg;
+            Response.Redirect("Menu.aspx");
         }
         else
         {
@@ -36,4 +37,6 @@ using System.Activities.Expressions;
     }
 
 }
+            
+
             
